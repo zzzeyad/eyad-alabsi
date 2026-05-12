@@ -6,3 +6,21 @@
        
 }
 sijshhshj
+.my-footer {
+    background-color: #27ae60; 
+    display: flex;
+    justify-content: center;   
+    gap: 40px;                
+    padding: 25px;  
+    width: 100%;           
+}
+
+.my-footer a {
+    color: white;
+    text-decoration: none;   
+    transition: 3s;  
+
+}
+.my-footer a:hover {
+    transform: translateY(-2px);
+}
