@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>تعليم لغتي</title>
    <link rel="stylesheet" href="تنسيق لغتي.css">
-
-
+<link rel="stylesheet" href="تنسيق لاختبار اللغتي.css">
+<script src="main.js" defer></script>
 
 
     
@@ -99,6 +99,26 @@
 </div>
 </div>
 
+<div class="word">
+ <div class="quiz-card">
+        <h2>اختبر نفسك</h2>
+        <p>في جملة "السماءُ صافيةٌ"، ما هو إعراب كلمة "صافيةٌ"؟</p>
+        
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="wrong"> مبتدأ
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="correct"> خبر
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="wrong"> فعل
+        </label>
+
+        <button onclick="submitQuiz()">تأكد من إجابتي</button>
+        <div id="result"></div>
+    </div>
+
+</div>
 </main>
 </div>
 </body>

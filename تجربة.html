@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس المبتدأ والخبر - لغتي العربية</title>
+    <style>
+        /* التنسيقات (CSS) لتناسب موقعك التعليمي */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .lesson-card, .quiz-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .example { background: #e8f4fd; padding: 10px; border-right: 5px solid #3498db; margin: 10px 0; }
+        .quiz-option { display: block; margin: 10px 0; cursor: pointer; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .quiz-option:hover { background-color: #f0f0f0; }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover { background-color: #2980b9; }
+        #result { margin-top: 15px; font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="lesson-card">
+        <h1>درس المبتدأ والخبر</h1>
+        <p>الجملة الاسمية تتكون من ركنين أساسيين هما:</p>
+        <ul>
+            <li><strong>المبتدأ:</strong> هو الاسم الذي تبدأ به الجملة ويكون مرفوعاً.</li>
+            <li><strong>الخبر:</strong> هو الذي يخبرنا معلومة عن المبتدأ وبه يتم معنى الجملة.</li>
+        </ul>
+        <div class="example">
+            مثال: <strong>العلمُ نورٌ</strong><br>
+            العلمُ: مبتدأ مرفوع بالضمة.<br>
+            نورٌ: خبر مرفوع بالضمة.
+        </div>
+    </div>
+
+    <div class="quiz-card">
+        <h2>اختبر نفسك</h2>
+        <p>في جملة "السماءُ صافيةٌ"، ما هو إعراب كلمة "صافيةٌ"؟</p>
+        
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="wrong"> مبتدأ
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="correct"> خبر
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="wrong"> فعل
+        </label>
+
+        <button onclick="submitQuiz()">تأكد من إجابتي</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const options = document.getElementsByName('arabicQuiz');
+            const resultDiv = document.getElementById('result');
+            let selectedValue = "";
+
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].checked) {
+                    selectedValue = options[i].value;
+                    break;
+                }
+            }
+
+            if (selectedValue === "") {
+                resultDiv.innerText = "الرجاء اختيار إجابة أولاً!";
+                resultDiv.style.color = "orange";
+            } else if (selectedValue === "correct") {
+                resultDiv.innerText = "إجابة صحيحة! أحسنت يا بطل 🌟 (الدرجة: 1/1)";
+                resultDiv.style.color = "green";
+            } else {
+                resultDiv.innerText = "إجابة خاطئة. الخبر هو الذي يكمل المعنى، حاول مرة أخرى!";
+                resultDiv.style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
