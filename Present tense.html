@@ -8,6 +8,8 @@
 
 <link rel="stylesheet" href="تنسيق لغتي.css">
 <link rel="stylesheet" href="تنسيق لغتي الفعل المضارع.css">
+<link rel="stylesheet" href="تنسيق لاختبار اللغتي.css">
+<script src="main.js" defer></script>
 </head>
 <body>
     <div class="lessons">
@@ -146,9 +148,93 @@
 </td>
 
 </tr>
+</table>
 </div>
 </div>
+<div class="word">
+    <h2>علامات اعرابها:
+    </h2>
+<div class="table">
+<table border="1" cellpadding="10">
+<tr class="one">
+<td class="onetd">الحالة</td>
+<td>صحيح الاخر</td>
+<td>معتل الاخر</td>
+<td>الافعال الخمسة</td>
 
+</tr>
+
+<tr class="two">
+<td class="twotd">الرفع</td>
+<td>الضمة الظاهرة</td>
+<td>الضمة المقدرة</td>
+<td>ثبوت النون</td>
+
+</tr>
+
+
+<tr class="three">
+<td class="threetd">النصب</td>
+<td>الفتحة الظاهرة</td>
+<td><ul>
+<li>الفتحة المقدرة للالف</li>
+<li>الفتحة الظاهرة للياء والواو</li>
+</ul>
+</td>
+<td>حذف النون</td>
+
+</tr>
+
+
+<tr class="four">
+<td class="fourtd">الجزم</td>
+<td>السكون</td>
+<td>حذف حرف العلة</td>
+<td>حذف النون</td>
+
+</tr>
+</table>
+</div>
+</div>
+<div class="word">
+<div class="quiz-card">
+        <h2>اختبر نفسك</h2>
+        <p>اي مما ياتي من حروف النصب؟</p>
+        
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="false"> ان-لن-لم
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="false"> لم-لا الناهية-لام الامر
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="arabicQuiz" value="correct"> ان-لن-كي
+        </label>
+ <div id="result"></div>
+        
+    
+
+
+
+
+    <p>اي مما ياتي ينصب بالفتحة المقدرة؟</p>
+<label class="quiz-option">
+    <input type="radio" name="arabicQuiz2" value="false">معتل الاخر بالياء
+</label>
+<label class="quiz-option">
+    <input type="radio" name="arabicQuiz2" value="correct">معتل الاخر بالالف
+</label>
+<label class="quiz-option">
+    <input type="radio" name="arabicQuiz2" value="false">معتل الاخر بالواو
+</label>
+ <div id="result2"></div>
+
+
+<button onclick="submitQuiz3()">تأكد من إجابتي</button>
+     <div id="results"></div>  
+
+</div>
+</div>
 </main>
 </div>
 
