@@ -63,7 +63,6 @@ text-align: justify;
 
 }
 .word ul{
-  list-style-type: none;
   padding: 0;
 }
 .word li{
@@ -73,6 +72,12 @@ text-align: justify;
 }
 .alhl{
   margin: 0;
+}
+.edit{
+  list-style-type: none;
+}
+span{
+  color: red;
 }
 .table{
   border-collapse: collapse;
