@@ -82,37 +82,47 @@ span{
 .table{
   border-collapse: collapse;
   text-align: center;
+ 
+}
+table,td{
+   border: 1px solid #DCD1BC;
 }
 .one{
-  background-color: rgb(75, 86, 245);
+  background-color: #4A154B;
+  color: white;
 }
 .two{
-  background-color: #FFB1DD;
+  background-color:#F8FAFC;
 }
 .three{
-  background-color: #FFB1DD;
+  background-color: #F8FAFC;
 }
 .four{
-  background-color:#FFB1DD;
+  background-color:#F8FAFC;
 }
 .five{
-  background-color:#FFB1DD;
+  background-color:#F8FAFC;
 }
 .six{
-  background-color: #FFB1DD;
+  background-color: #F8FAFC;
 }
 .twotd{
-   background-color: rgb(75, 86, 245);
+    background-color: #4A154B;
+  color: white;
 }
 .threetd{
-   background-color:  rgb(75, 86, 245);
+    background-color: #4A154B;
+  color: white;
 }
 .fourtd{
-   background-color: rgb(75, 86, 245);
+    background-color: #4A154B;
+  color: white;
 }
 .fivetd{
-   background-color:  rgb(75, 86, 245);
+    background-color: #4A154B;
+  color: white;
 }
 .sixtd{
-   background-color:  rgb(75, 86, 245);
+   background-color: #4A154B;
+  color: white;
 }

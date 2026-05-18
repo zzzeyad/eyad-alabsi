@@ -68,32 +68,40 @@ text-align: center;
 
 
 }
-.one{
-background-color: #e07a5f;
-font-weight: bold;
+table,td{
+   border: 1px solid #DCD1BC;
 
 }
+.one{
+background-color: #0B4F42;
+font-weight: bold;
+color: white;
+}
 .two{
-    background-color: #ffc107;
+    background-color: #FBF8F3;
     
 }
 .three{
-    background-color: #ffc107;
+    background-color: #FBF8F3;
 }
 .four{
-    background-color: #ffc107;
+    background-color: #FBF8F3;
 }
 .onetd{
-    background-color: #e07a5f;
+   background-color: #0B4F42;
+color: white;
 }
 .twotd{
-background-color: #e07a5f;
+background-color: #0B4F42;
+color: white;
 }
 .threetd{
-background-color: #e07a5f;
+background-color: #0B4F42;
+color: white;
 }
 .fourtd{
-background-color: #e07a5f;
+background-color: #0B4F42;
+color: white;
 }
 
 
